@@ -18,7 +18,7 @@ googleAnalytics = "UA-76623058-1"
 	# To provide some metadata for search engines feel free to add a few
     # information about you and your website.
 	name = "BibleFoundry"
-	description = "Your description"
+	description = "Apps to build up the body of Christ"
 
 	# Since this template is static, the contact form uses www.formspree.io as a
 	# proxy. The form makes a POST request to their servers to send the actual
@@ -37,10 +37,10 @@ googleAnalytics = "UA-76623058-1"
 	# Navigation
 	[params.navigation]
 		brand = "BibleFoundry"
-		services = "Services"
-		portfolio = "Portfolio"
+		logo = "biblefoundry.png"
+		apps = "Apps"
 		about = "About"
-		team = "Team"
+		team = "Our Team"
 		contact = "Contact"
 
     # Add custom links. Those can be pre- and postpended to the default menu above.
@@ -65,48 +65,19 @@ googleAnalytics = "UA-76623058-1"
 		# To change the background image of the hero, replace 'header-bg.jpg' in
 		# the 'static/img' folder.
 		title = "Welcome to BibleFoundry!"
-		subtitle = "It's nice to meet you"
+		subtitle = "Apps to build up the body of Christ"
 		buttonText = "Tell me more"
 
 
-	# Services section
-	[params.services]
-    enable = false
-		title = "Services"
-		subtitle = "Lorem ipsum dolor sit amet consectetur."
-
-        [[params.services.row]]
-
-            [[params.services.row.list]]
-                icon = "fa-shopping-cart"
-                title = "E-Commerce"
-                description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-
-            [[params.services.row.list]]
-                icon = "fa-laptop"
-                title = "Responsive Design"
-                description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-
-            [[params.services.row.list]]
-                icon = "fa-lock"
-                title = "Web"
-                description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-
-	# Portfolio section
-	[params.portfolio]
+	# Apps section
+	[params.apps]
         enable = true
 		# All projects defined in their own files. You can find example projects
 		# at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
 		# at the root of this Hugo site.
 		# For more informtion take a look at the README.
-		title = "Portfolio"
-		subtitle = "Apps that we have released or are currently developing"
-
-		[params.portfolio.modal]
-            client = "Client"
-            date = "Date"
-            category = "Category"
-            buttonText = "Close project"
+		title = "Apps"
+		subtitle = "Apps released or in development"
 
 
     # About section
@@ -114,76 +85,21 @@ googleAnalytics = "UA-76623058-1"
         enable = true
 		title = "About"
 		subtitle = "What we are all about"
-		endpoint = "Be part<br>of our<br>story!"
-
-		# The events will be listed from the top to the bottom.
-		# All images are stored under 'static/img/about'.
-		# Replace them with your own.
-		[[params.about.events]]
-			img = "1.jpg"
-			date = "2009-2011"
-			title = "Our Humble Beginnings"
-			description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-
-		[[params.about.events]]
-			img = "2.jpg"
-			date = "March 2011"
-			title = "An Agency is Born"
-			description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-
-		[[params.about.events]]
-			img = "3.jpg"
-			date = "December 2012"
-			title = "Our Humble Beginnings"
-			description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-
-		[[params.about.events]]
-			img = "4.jpg"
-			date = "July 2014"
-			title = "Phase Two Expansion"
-			description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+		content = "..."
 
 
 	# Team section
 	[params.team]
         enable = true
-		title = "Our team"
-		subtitle = "Lorem ipsum dolor sit amet consectetur."
-		description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde."
+		title = "Our Team"
+		subtitle = "Who we are"
 
 		# All team member's pictures are stored under 'static/img/team'.
 		# Replace them with your own too.
 		[[params.team.members]]
-			img = "2.jpg"
+			img = "bryant.jpg"
 			name = "Bryant Huang"
-			position = "Founder"
-			social = [
-				["fa-twitter", "#"],
-				["fa-facebook", "#"],
-				["fa-linkedin", "#"]
-			]
-
-	# Client section
-    [params.clients_list]
-        enable = false
-
-    	# All the clients' logos are stored under 'static/img/logos'.
-    	# Replace them with your clients's logos.
-    	[[params.clients]]
-    		logo = "envato.jpg"
-    		link = "#"
-
-    	[[params.clients]]
-    		logo = "designmodo.jpg"
-    		link = "#"
-
-    	[[params.clients]]
-    		logo = "themeforest.jpg"
-    		link = "#"
-
-    	[[params.clients]]
-    		logo = "creative-market.jpg"
-    		link = "#"
+			bio = "Slave of God"
 
 
 	# Contact section
@@ -223,15 +139,3 @@ googleAnalytics = "UA-76623058-1"
 		[[params.footer.social]]
 			icon = "fa-facebook"
 			link = "https://www.facebook.com/BibleFoundry"
-
-		#[[params.footer.social]]
-		#	icon = "fa-linkedin"
-		#	link = "#"
-
-		[[params.footer.quicklinks]]
-			text = "Privacy Policy"
-			link = "#"
-
-		[[params.footer.quicklinks]]
-			text = "Terms of Use"
-			link = "#"

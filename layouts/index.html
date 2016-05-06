@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+<head>
+    {{ partial "head.html" . }}
+</head>
+    <body id="page-top" class="index">
+        {{ partial "nav.html" . }}
+        {{ partial "hero.html" . }}
+
+        {{ if .Site.Params.apps.enable }}
+            {{ partial "apps.html" . }}
+        {{ end }}
+
+        {{ if .Site.Params.about.enable }}
+            {{ partial "about.html" . }}
+        {{ end }}
+
+        {{ if .Site.Params.team.enable }}
+            {{ partial "team.html" . }}
+        {{ end }}
+
+        {{ if .Site.Params.contact.enable }}
+            {{ partial "contact.html" . }}
+        {{ end }}
+
+        {{ if .Site.Params.footer.enable }}
+            {{ partial "footer.html" . }}
+        {{ end }}
+
+        {{ partial "js.html" . }}
+    </body>
+</html>
