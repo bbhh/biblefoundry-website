@@ -778,3 +778,10 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #fed136;
 }
+
+.bio {
+    padding-top: 10px;
+    text-align: justify;
+    color: #777;
+    font-size: 90%;
+}
