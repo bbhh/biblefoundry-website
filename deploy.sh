@@ -5,6 +5,9 @@ echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 # Build the project.
 hugo
 
+# Copy CNAME file.
+cp CNAME docs/
+
 # Add changes to git.
 git add -A
 
@@ -18,5 +21,3 @@ git commit -m "$msg"
 # Push source and build repos.
 git push origin master
 #git subtree push --prefix=public git@github.com:bbhh/biblefoundry-website.git gh-pages
-
-cp CNAME docs/
