@@ -8,9 +8,8 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-4"></div>
             {{ range .Site.Params.team.members }}
-            <div class="col-sm-4">
+            <div class="col-sm-12">
                 <div class="team-member">
                     <img src="img/team/{{ .img }}" class="img-responsive img-circle" alt="">
                     <h4>{{ .name | markdownify }}</h4>
@@ -18,7 +17,6 @@
                 </div>
             </div>
             {{ end }}
-            <div class="col-sm-4"></div>
         </div>
     </div>
 </section>

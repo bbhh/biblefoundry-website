@@ -39,8 +39,8 @@ googleAnalytics = "UA-76623058-1"
 		brand = "BibleFoundry"
 		logo = "biblefoundry.png"
 		apps = "Apps"
-		about = "About"
-		team = "Our Team"
+		about = "Purpose"
+		team = "Identity"
 		contact = "Contact"
 
     # Add custom links. Those can be pre- and postpended to the default menu above.
@@ -77,36 +77,33 @@ googleAnalytics = "UA-76623058-1"
 		# at the root of this Hugo site.
 		# For more informtion take a look at the README.
 		title = "Apps"
-		subtitle = "Apps released or in development"
 
 
     # About section
 	[params.about]
         enable = true
-		title = "About"
-		subtitle = "What we are all about"
-		content = "A major display of God's common grace is His gift of technology, which has improved our quality of life in many ways. Just like many other God-given gifts, technology can be used either for God's glory or for God's displeasure. Our laser focus is to leverage technology for the edification of the body of Christ (Eph 4:11-16). We aim to develop apps that help (1) *Christians* to grow in their love for Christ and His Word (Phil 1:9-11), (2) *pastors and ministers* to rightly handle the word of truth (2 Tim 2:15), and (3) *churches* to shine as a pillar and buttress of the truth (1 Tim 3:15)."
+		title = "Purpose"
+		content = "A prominent display of God's common grace is His gift of technology, which has improved our quality of life in countless ways. Like many other God-given gifts, technology can be used either for God's glory or for God's displeasure. My focus is to leverage technology for the edification of the body of Christ (Eph 4:11-16), and aim to develop apps that help (1) *Christians* to grow in their love for Christ and His Word (Phil 1:9-11), (2) *pastors and ministers* to rightly handle the word of truth (2 Tim 2:15), and (3) *churches* to shine as a pillar and buttress of the truth (1 Tim 3:15)."
 
 
 	# Team section
 	[params.team]
         enable = true
-		title = "Our Team"
-		subtitle = "Who we are"
+		title = "Identity"
 
 		# All team member's pictures are stored under 'static/img/team'.
 		# Replace them with your own too.
 		[[params.team.members]]
 			img = "bryant.jpg"
 			name = "Bryant Huang"
-			bio = "Bryant was born and raised in Rowland Heights, CA, and was blessed to attend Evangelical Formosan Church of Hacienda Heights for most of his life. God, in His amazing grace, chose to save this sinner during college. Bryant went on to complete his B.A. at UCLA and M.S. at USC in Computational Linguistics. As he served in the local body of Christ, he discovered the incomparable joy of teaching God’s Word and seeing it bear fruit in people’s lives (Col 1:28). This led Bryant to study at [The Master’s Seminary](http://www.tms.edu/) to be better equipped to teach God’s Word and shepherd God’s people with greater faithfulness, which resulted in an M.Div. He is a member of [Immanuel Bible Church](https://www.ibcbible.org/) and works as a software engineer at [SDL](http://www.sdl.com). In his spare time, he enjoys eating good eats, basketball, reading, writing apps, learning languages, biking, traveling, roasting/brewing coffee, and especially spending time with his wife and kids. Bryant lives in Valencia, CA, with his wife, Juliette, and their three sons."
+			bio = "Bryant was born and raised in Rowland Heights, CA. God, in His amazing grace, chose to save this sinner during college. Bryant went on to complete his B.A. at UCLA and M.S. at USC in Computational Linguistics. As he served in the local body of Christ, he discovered the incomparable joy of teaching God’s Word and seeing it bear fruit in people’s lives (Col 1:28). This led Bryant to study at [The Master’s Seminary](http://www.tms.edu/) and obtain an M.Div. in order to be better equipped to teach God’s Word and shepherd God’s people. He is a member of [Immanuel Bible Church](https://www.ibcbible.org/) and works as a software engineer at [SDL](http://www.sdl.com). In his spare time, he enjoys eating good eats, playing basketball, reading, developing apps, roasting/brewing coffee, baking sourdough bread, learning languages, biking, traveling, and especially spending time with his wife and kids. Bryant lives in Valencia, CA, with his wife Juliette and their three sons."
 
 
 	# Contact section
 	[params.contact]
         enable = true
-		title = "Contact us"
-		subtitle  = "Keep in touch by sending us a message here"
+		title = "Contact"
+		subtitle  = "Keep in touch by sending a message here"
 		buttonText = "Send message"
 
 		# 'warning' defines error messages for invalid inputs
@@ -118,10 +115,6 @@ googleAnalytics = "UA-76623058-1"
 			text = "Your Email *"
 			warning = "Please enter your email address."
 
-		[params.contact.form.phone]
-			text = "Your Phone *"
-			warning = "Please enter your phone number."
-
 		[params.contact.form.message]
 			text = "Your Message *"
 			warning = "Please enter a message."
@@ -130,7 +123,7 @@ googleAnalytics = "UA-76623058-1"
 	# Footer section
 	[params.footer]
         enable = true
-		copyright = "&copy; 2016 BibleFoundry"
+		copyright = "&copy; 2017 BibleFoundry"
 
 		[[params.footer.social]]
 			icon = "fa-twitter"
