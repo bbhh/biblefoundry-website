@@ -18,3 +18,5 @@ git commit -m "$msg"
 # Push source and build repos.
 git push origin master
 git subtree push --prefix=public git@github.com:bbhh/biblefoundry-website.git gh-pages
+
+cp CNAME docs/
