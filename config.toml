@@ -103,7 +103,6 @@ googleAnalytics = "UA-76623058-1"
 	[params.contact]
         enable = true
 		title = "Contact"
-		subtitle  = "Keep in touch by sending a message here"
 		buttonText = "Send message"
 
 		# 'warning' defines error messages for invalid inputs
