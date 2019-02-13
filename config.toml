@@ -76,10 +76,10 @@ googleAnalytics = "UA-76623058-1"
 		title = "Updates"
 
 		[[params.updates.items]]
-			title = "Five Psalms is broken on some Android phones (blank screen)"
-			date = "February 4, 2019"
-			text = "<p>Since January 31, 2019, several Android users have been reporting that Five Psalms no longer displays the Scripture text, but simply a blank screen. A recent update to Google Chrome (version 72.0.3626.76) has introduced a bug which is causing this issue, since Five Psalms uses Chrome to render the Scripture text on Android. The Google Chrome team is now aware of this bug, so I am closely monitoring their progress on fixing it. The problem should be resolved automatically once they fix Chrome and your Android phone updates to the new version. Unfortunately, there is nothing else I can do on my end until they fix Chrome.</p><p>Thank you for your patience and continuing to support this app! If you have any questions or comments, please contact me in the form below.</p>"
-			level = "danger"
+			title = "Five Psalms is working again!"
+			date = "February 12, 2019"
+			text = "The Google Chrome team has fixed the bug that was causing the Scripture text to appear blank on some Android devices, so try opening Five Psalms again. If the Scripture text is still not appearing, make sure your Chrome is up to date by following the instructions <a href='https://support.google.com/googleplay/answer/113412?hl=en' target='_blank'>here</a>. If that doesn't resolve it, please contact me in the form below."
+			level = "success"
 
 	# Apps section
 	[params.apps]
