@@ -41,7 +41,7 @@ googleAnalytics = "UA-76623058-1"
 		logo = "biblefoundry.png"
 		apps = "Apps"
 		about = "Purpose"
-		team = "Identity"
+		team = "About"
 		contact = "Contact"
 
     # Add custom links. Those can be pre- and postpended to the default menu above.
@@ -76,9 +76,9 @@ googleAnalytics = "UA-76623058-1"
 		title = "Updates"
 
 		[[params.updates.items]]
-			title = "Five Psalms is working again!"
-			date = "February 12, 2019"
-			text = "The Google Chrome team has fixed the bug that was causing the Scripture text to appear blank on some Android devices, so try opening Five Psalms again. If the Scripture text is still not appearing, make sure your Chrome is up to date by following the instructions <a href='https://support.google.com/googleplay/answer/113412?hl=en' target='_blank'>here</a>. If that doesn't resolve it, please contact me in the form below."
+			title = "Five Psalms v2 coming soon!"
+			date = "August 12, 2020"
+			text = "In my scarce free time, I've been working hard on a complete rewrite of Five Psalms from the ground up, which will make it easier for me to make improvements in the future. This new version (v2) will include some new features, so keep an eye out for an update coming in the next few months!"
 			level = "success"
 
 	# Apps section
@@ -101,14 +101,14 @@ googleAnalytics = "UA-76623058-1"
 	# Team section
 	[params.team]
         enable = true
-		title = "Identity"
+		title = "About"
 
 		# All team member's pictures are stored under 'static/img/team'.
 		# Replace them with your own too.
 		[[params.team.members]]
 			img = "bryant.jpg"
 			name = "Bryant Huang"
-			bio = "Bryant was born and raised in Rowland Heights, CA. God, in His amazing grace, chose to save this sinner during college. Bryant went on to complete his B.A. at UCLA and M.S. at USC in Computational Linguistics. As he served in the local body of Christ, he discovered the incomparable joy of teaching God’s Word and seeing it bear fruit in people’s lives (Col 1:28). This led Bryant to study at [The Master’s Seminary](http://www.tms.edu/) and obtain an M.Div. in order to be better equipped to teach God’s Word and shepherd God’s people. He is a member of [Immanuel Bible Church](https://www.ibcbible.org/) and works as a software engineer at [Amazon](https://www.amazon.com/). In his spare time, he enjoys eating good eats, playing basketball, reading Christian books, developing apps, roasting/brewing coffee, making sourdough bread, learning languages, biking, traveling, and especially spending time with his family. Bryant lives in Valencia, CA, with his wife Juliette and their three sons."
+			bio = "Bryant was born and raised in Rowland Heights, CA. God, in His amazing grace, chose to save this sinner during high school. Bryant went on to complete his B.A. at UCLA and M.S. at USC in Computational Linguistics. While serving in the local church, he discovered the incomparable joy of teaching the Bible and seeing it bear fruit in people’s lives (Colossians 1:28), which led him to obtain an M.Div. from [The Master’s Seminary](https://tms.edu/) to be better equipped to feed and shepherd God’s people. He is a member of [Immanuel Bible Church](https://ibcbible.org/) and works as a software engineer at Amazon. In his spare time, he enjoys good eats, basketball, writing apps, reading books, making sourdough, roasting/brewing coffee, learning languages, traveling, and especially spending time with his family. Bryant ministers his wife Juliette and their three sons."
 
 
 	# Contact section
@@ -134,7 +134,7 @@ googleAnalytics = "UA-76623058-1"
 	# Footer section
 	[params.footer]
         enable = true
-		copyright = "&copy; 2019 BibleFoundry"
+		copyright = "&copy; 2020 BibleFoundry"
 
 		[[params.footer.social]]
 			icon = "fa-twitter"
