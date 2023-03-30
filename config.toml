@@ -108,7 +108,7 @@ googleAnalytics = "UA-76623058-1"
 		[[params.team.members]]
 			img = "bryant.jpg"
 			name = "Bryant Huang"
-			bio = "Bryant was born and raised in Rowland Heights, CA. God, in His amazing grace, chose to save this sinner during high school. Bryant went on to complete his B.A. at UCLA and M.S. at USC in Computational Linguistics. While serving in the local church, he discovered the incomparable joy of teaching the Bible and seeing it bear fruit in people’s lives (Colossians 1:28), which led him to obtain an M.Div. from [The Master’s Seminary](https://tms.edu/) to be better equipped to feed and shepherd God’s people. He is a member of [Immanuel Bible Church](https://ibcbible.org/) and works as a software engineer at Amazon. In his spare time, he enjoys good eats, basketball, writing apps, reading books, making sourdough, roasting/brewing coffee, learning languages, traveling, and especially spending time with his family. Bryant ministers his wife Juliette and their three sons."
+			bio = "Bryant was born and raised in Rowland Heights, CA. God, in His amazing grace, chose to save this sinner during high school. Bryant went on to complete his B.A. at UCLA and M.S. at USC in Computational Linguistics. While serving in the local church, he discovered the incomparable joy of teaching the Bible and seeing it bear fruit in people’s lives (Colossians 1:28), which led him to obtain an M.Div. from [The Master’s Seminary](https://tms.edu/) to be better equipped to feed and shepherd God’s people. He is a member of [Immanuel Bible Church](https://ibcbible.org/) and works as a software engineer at Amazon. In his spare time, he enjoys good eats, basketball, writing apps, reading books, making sourdough, roasting/brewing coffee, learning languages, traveling, and especially spending time with his family. Bryant ministers with his wife Juliette and their four children."
 
 
 	# Contact section
@@ -134,7 +134,7 @@ googleAnalytics = "UA-76623058-1"
 	# Footer section
 	[params.footer]
         enable = true
-		copyright = "&copy; 2020 BibleFoundry"
+		copyright = "&copy; 2023 BibleFoundry"
 
 		[[params.footer.social]]
 			icon = "fa-twitter"
