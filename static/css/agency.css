@@ -723,6 +723,18 @@ footer span.copyright {
     line-height: 40px;
 }
 
+ul.quicklinks {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-transform: none;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align: center;
+}
+
+ul.quicklinks li {
+    line-height: 40px;
+}
+
 ul.social-buttons {
     margin-bottom: 0;
     text-align: right;

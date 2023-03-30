@@ -143,3 +143,7 @@ googleAnalytics = "UA-76623058-1"
 		[[params.footer.social]]
 			icon = "fa-facebook"
 			link = "https://www.facebook.com/BibleFoundry"
+		
+		[[params.footer.quicklinks]]
+      		text = "Privacy Policy"
+      		link = "/privacy.html"
