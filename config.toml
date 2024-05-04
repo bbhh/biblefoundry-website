@@ -34,6 +34,8 @@ googleAnalytics = "UA-76623058-1"
     # - you're done. Happy mailing!
 	email = "biblefoundry@gmail.com"
 
+	# Link custom assets relative to /static
+	favicon = "favicon.ico"
 
 	# Navigation
 	[params.navigation]
