@@ -1,0 +1,23 @@
+{{ define "main" }}
+  <article class="wrap interior app-detail">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="{{ .CurrentSection.RelPermalink }}">{{ .CurrentSection.Title }}</a>
+    </nav>
+    <header class="app-heading">
+      {{ with .Params.icon }}
+        <img class="app-icon" src="{{ . | relURL }}" width="80" height="80" alt="">
+      {{ end }}
+      <div>
+        <h1>{{ .Title }}</h1>
+        <p class="lede">{{ .Description }}</p>
+      </div>
+    </header>
+    <div class="store-links">
+      {{ with .Params.appStore }}<a class="button button-primary" href="{{ . }}">Download on the App Store</a>{{ end }}
+      {{ with .Params.googlePlay }}<a class="button button-outline" href="{{ . }}">Get it on Google Play</a>{{ end }}
+    </div>
+    <div class="prose">
+      {{ .Content }}
+    </div>
+  </article>
+{{ end }}

@@ -1,36 +1,61 @@
-<!DOCTYPE html>
-<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
-<head>
-    {{ partial "head.html" . }}
-</head>
-    <body id="page-top" class="index">
-        {{ partial "nav.html" . }}
-        {{ partial "hero.html" . }}
-
-        {{ if .Site.Params.updates.enable }}
-            {{ partial "updates.html" . }}
-        {{ end }}
-
-        {{ if .Site.Params.apps.enable }}
-            {{ partial "apps.html" . }}
-        {{ end }}
-
-        {{ if .Site.Params.about.enable }}
-            {{ partial "about.html" . }}
-        {{ end }}
-
-        {{ if .Site.Params.team.enable }}
-            {{ partial "team.html" . }}
-        {{ end }}
-
-        {{ if .Site.Params.contact.enable }}
-            {{ partial "contact.html" . }}
-        {{ end }}
-
-        {{ if .Site.Params.footer.enable }}
-            {{ partial "footer.html" . }}
-        {{ end }}
-
-        {{ partial "js.html" . }}
-    </body>
-</html>
+{{ define "main" }}
+  <section class="wrap hero">
+    <div class="hero-copy">
+      <h1>{{ .Site.Params.mission }}</h1>
+      <p>{{ .Site.Params.description }}</p>
+      <a class="button button-primary" href="#apps">Explore the apps</a>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="folio">
+        <div class="folio-cover"></div>
+        <div class="folio-page folio-left"></div>
+        <div class="folio-page folio-right"></div>
+      </div>
+    </div>
+  </section>
+  <section id="apps" class="wrap catalog" aria-labelledby="apps-heading">
+    <h2 id="apps-heading">Apps</h2>
+    {{ with .GetPage "/apps" }}
+      {{ partial "app-index.html" .RegularPages.ByWeight }}
+    {{ end }}
+  </section>
+  <section id="about" class="about" aria-labelledby="about-heading">
+    <div class="wrap about-inner">
+      <div class="about-intro">
+        <h2 id="about-heading">Why BibleFoundry exists</h2>
+        <div>
+          {{ .Site.Params.purpose | markdownify }}
+        </div>
+      </div>
+      {{ with .Site.Params.founder }}
+        <article id="team" class="founder">
+          <img src="{{ .portrait | relURL }}" alt="{{ .name }}" width="280" height="280" loading="lazy">
+          <div>
+            <h3>Meet {{ .name }}</h3>
+            {{ .bio | markdownify }}
+          </div>
+        </article>
+      {{ end }}
+    </div>
+  </section>
+  <section id="contact" class="wrap contact" aria-labelledby="contact-heading">
+    <div>
+      <h2 id="contact-heading">Contact</h2>
+      <p>Get in touch with questions about an app or ideas for what we could build next.</p>
+    </div>
+    <form action="https://formspree.io/{{ .Site.Params.email }}" method="post">
+      <div class="form-row">
+        <label for="contact-name">Name
+          <input id="contact-name" name="name" autocomplete="name" required>
+        </label>
+        <label for="contact-email">Email
+          <input id="contact-email" name="email" type="email" autocomplete="email" required>
+        </label>
+      </div>
+      <label for="contact-message">Message
+        <textarea id="contact-message" name="message" rows="4" required></textarea>
+      </label>
+      <button class="button button-primary" type="submit">Send message</button>
+    </form>
+  </section>
+{{ end }}

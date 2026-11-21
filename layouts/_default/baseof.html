@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="{{ .Site.Language.Locale }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ .Description | default .Site.Params.description }}">
+  <title>{{ if not .IsHome }}{{ .Title }} · {{ end }}{{ .Site.Title }}</title>
+  <link rel="canonical" href="{{ .Permalink }}">
+  <link rel="icon" href="{{ "favicon.ico" | relURL }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  {{ $style := resources.Get "css/foundry.css" | fingerprint }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="{{ "" | relURL }}">
+        <img src="{{ "img/nav/biblefoundry.png" | relURL }}" width="48" height="48" alt="">
+        {{ .Site.Title }}
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="{{ "" | relURL }}#apps">Apps</a>
+        <a href="{{ "" | relURL }}#about">About</a>
+        <a href="{{ "" | relURL }}#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    {{ block "main" . }}{{ end }}
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>&copy; {{ now.Year }} {{ .Site.Title }}</span>
+      <nav aria-label="Footer navigation">
+        <a href="{{ "privacy.html" | relURL }}">Privacy Policy</a>
+        <a href="{{ .Site.Params.social.facebook }}">Facebook</a>
+        <a href="{{ .Site.Params.social.twitter }}">X</a>
+      </nav>
+    </div>
+  </footer>
+  <script>
+    window.refTagger = { settings: { bibleVersion: "ESV" } };
+  </script>
+  <script src="https://api.reftagger.com/v2/RefTagger.js" defer></script>
+</body>
+</html>

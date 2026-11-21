@@ -1,0 +1,7 @@
+{{ define "main" }}
+  <section class="wrap interior catalog">
+    <h1>{{ .Title }}</h1>
+    <p class="lede">{{ .Description }}</p>
+    {{ partial "app-index.html" .RegularPages.ByWeight }}
+  </section>
+{{ end }}

@@ -2,10 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.biblefoundry.com/apps/five-psalms/</loc>
+  </url><url>
+    <loc>https://www.biblefoundry.com/apps/</loc>
+  </url><url>
     <loc>https://www.biblefoundry.com/</loc>
-  </url><url>
-    <loc>https://www.biblefoundry.com/categories/</loc>
-  </url><url>
-    <loc>https://www.biblefoundry.com/tags/</loc>
   </url>
 </urlset>

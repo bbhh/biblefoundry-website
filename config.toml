@@ -1,151 +1,28 @@
-# Site settings
-baseurl = "https://www.biblefoundry.com/"
-languageCode = "en-us"
+baseURL = "https://www.biblefoundry.com/"
+languageCode = "en-US"
 title = "BibleFoundry"
-theme = "hugo-agency-theme"
-publishdir = "docs"
-# Enter your tracking code to enable Google Analytics
-googleAnalytics = "UA-76623058-1"
+publishDir = "docs"
+disableKinds = ["taxonomy", "term"]
 
 [params]
+description = "BibleFoundry makes digital tools for Bible study, prayer, and ministry."
+mission = "Apps to build up the body of Christ"
+email = "biblefoundry@gmail.com"
+purpose = """
+A prominent display of God’s common grace is His gift of technology, which has improved our quality of life in countless ways. Like many other God-given gifts, technology can be used either for God’s glory or for God’s displeasure.
 
-	# You can use Markdown syntax for urls [text](//url.to/source) or
-	# most longer texts.
-	#
-	# All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
-	# for more icons. The icons are represented by their corresponding
-	# CSS class.
+My focus is to leverage technology for the edification of the body of Christ (Ephesians 4:11–16). I aim to develop apps that help *Christians* to grow in their love for Christ and His Word (Philippians 1:9–11), *pastors and ministers* to rightly handle the word of truth (2 Timothy 2:15), and *churches* to shine as a pillar and buttress of the truth (1 Timothy 3:15).
+"""
 
-	# To provide some metadata for search engines feel free to add a few
-    # information about you and your website.
-	name = "BibleFoundry"
-	description = "Apps to build up the body of Christ"
+[params.founder]
+name = "Bryant Huang"
+portrait = "img/team/bryant.jpg"
+bio = """
+Bryant was born and raised in Los Angeles. God, in His amazing grace, chose to save this sinner during high school. Bryant went on to complete his B.A. at UCLA and M.S. at USC in Computational Linguistics. While serving in the local church, he discovered the incomparable joy of teaching the Bible and seeing it bear fruit in people’s lives (Colossians 1:28), which led him to obtain an M.Div. from [The Master’s Seminary](https://tms.edu/) to be better equipped to feed and shepherd God’s people.
 
-	# Since this template is static, the contact form uses www.formspree.io as a
-	# proxy. The form makes a POST request to their servers to send the actual
-	# email. Visitors can send up to a 1000 emails each month for free.
-    #
-    # What you need to do for the setup?
-    #
-    # - set your email address under 'email' below
-    # - upload the generated site to your server
-    # - send a dummy email yourself to confirm your account
-    # - click the confirm link in the email from www.formspree.io
-    # - you're done. Happy mailing!
-	email = "biblefoundry@gmail.com"
+He is a member of [Immanuel Bible Church](https://ibcbible.org/) and works as a software engineer at Amazon. In his spare time, he enjoys eating good eats, making good eats from scratch, playing basketball, writing apps, reading books, learning languages, traveling, and especially spending time with his family. Bryant ministers with his wife Juliette and their five children.
+"""
 
-	# Link custom assets relative to /static
-	favicon = "favicon.ico"
-
-	# Navigation
-	[params.navigation]
-		brand = "BibleFoundry"
-		logo = "biblefoundry.png"
-		apps = "Apps"
-		about = "Purpose"
-		team = "About"
-		contact = "Contact"
-
-    # Add custom links. Those can be pre- and postpended to the default menu above.
-    # Use the weight attribute to order your custom links. Uncomment the example
-    # below and replace the values with your own.
-
-    # prepended links
-    #[[menu.prepend]]
-    #    url = "http://gohugo.io"
-    #    name = "Hugo"
-    #    weight = 10
-
-    ## postpended links
-    #[[menu.postpend]]
-    #    url = "http://gohugo.io"
-    #    name = "External link"
-    #    weight = 10
-
-
-	# Hero section
-	[params.hero]
-		# To change the background image of the hero, replace 'header-bg.jpg' in
-		# the 'static/img' folder.
-		title = "Welcome to BibleFoundry!"
-		subtitle = "Apps to build up the body of Christ"
-		buttonText = "Tell me more"
-
-
-	# Updates section
-	[params.updates]
-		enable = true
-		title = "Updates"
-
-		[[params.updates.items]]
-			title = "Five Psalms v2 now available on Android"
-			date = "April 29, 2024"
-			text = "<p>Thanks for your patience, Android users! Many of you were complaining that Five Psalms no longer runs on newer versions of Android. Almost a year ago, I was planning to release v2 of Five Psalms, but only got so far as distributing it to a few beta testers, then I got caught up with the nonstop busyness of life. I finally had a chance this month to bring it across the finish line for Android only. This is a completely new rewrite of Five Psalms from the ground up, which also features a new date picker as well as a new Spanish Bible version (Reina Valera Actualizada (RVA)).</p><p style='font-weight:bold'>Note: In order to upgrade to this new version, you will have to uninstall Five Psalms first, and then install it again <a href='https://play.google.com/store/apps/details?id=com.biblefoundry.fivepsalmsandroid' target='_blank'>here</a> from the Play Store.</p><p>Sorry, iOS users, you'll have to be patient as I find time to get the iOS version of Five Psalms v2 working. (But at least v1 still works for you!)</p>"
-			level = "success"
-
-	# Apps section
-	[params.apps]
-        enable = true
-		# All projects defined in their own files. You can find example projects
-		# at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
-		# at the root of this Hugo site.
-		# For more informtion take a look at the README.
-		title = "Apps"
-
-
-    # About section
-	[params.about]
-        enable = true
-		title = "Purpose"
-		content = "A prominent display of God's common grace is His gift of technology, which has improved our quality of life in countless ways. Like many other God-given gifts, technology can be used either for God's glory or for God's displeasure. My focus is to leverage technology for the edification of the body of Christ (Eph 4:11-16), and aim to develop apps that help (1) *Christians* to grow in their love for Christ and His Word (Phil 1:9-11), (2) *pastors and ministers* to rightly handle the word of truth (2 Tim 2:15), and (3) *churches* to shine as a pillar and buttress of the truth (1 Tim 3:15)."
-
-
-	# Team section
-	[params.team]
-        enable = true
-		title = "About"
-
-		# All team member's pictures are stored under 'static/img/team'.
-		# Replace them with your own too.
-		[[params.team.members]]
-			img = "bryant.jpg"
-			name = "Bryant Huang"
-			bio = "Bryant was born and raised in Rowland Heights, CA. God, in His amazing grace, chose to save this sinner during high school. Bryant went on to complete his B.A. at UCLA and M.S. at USC in Computational Linguistics. While serving in the local church, he discovered the incomparable joy of teaching the Bible and seeing it bear fruit in people’s lives (Colossians 1:28), which led him to obtain an M.Div. from [The Master’s Seminary](https://tms.edu/) to be better equipped to feed and shepherd God’s people. He is a member of [Immanuel Bible Church](https://ibcbible.org/) and works as a software engineer at Amazon. In his spare time, he enjoys good eats, basketball, writing apps, reading books, making sourdough, roasting/brewing coffee, learning languages, traveling, and especially spending time with his family. Bryant ministers with his wife Juliette and their four children."
-
-
-	# Contact section
-	[params.contact]
-        enable = true
-		title = "Contact"
-		buttonText = "Send message"
-
-		# 'warning' defines error messages for invalid inputs
-		[params.contact.form.name]
-			text = "Your Name *"
-			warning = "Please enter your name."
-
-		[params.contact.form.email]
-			text = "Your Email *"
-			warning = "Please enter your email address."
-
-		[params.contact.form.message]
-			text = "Your Message *"
-			warning = "Please enter a message."
-
-
-	# Footer section
-	[params.footer]
-        enable = true
-		copyright = "&copy; 2024 BibleFoundry"
-
-		[[params.footer.social]]
-			icon = "fa-twitter"
-			link = "https://twitter.com/BibleFoundry"
-
-		[[params.footer.social]]
-			icon = "fa-facebook"
-			link = "https://www.facebook.com/BibleFoundry"
-		
-		[[params.footer.quicklinks]]
-      		text = "Privacy Policy"
-      		link = "/privacy.html"
+[params.social]
+facebook = "https://www.facebook.com/BibleFoundry"
+twitter = "https://x.com/BibleFoundry"

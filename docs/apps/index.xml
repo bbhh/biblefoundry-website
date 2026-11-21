@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Apps on BibleFoundry</title>
+		<link>https://www.biblefoundry.com/apps/</link>
+		<description>Recent content in Apps on BibleFoundry</description>
+		<generator>Hugo</generator>
+		<language>en-US</language>
+
+
+
+
+			<atom:link href="https://www.biblefoundry.com/apps/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Five Psalms</title>
+				<link>https://www.biblefoundry.com/apps/five-psalms/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://www.biblefoundry.com/apps/five-psalms/</guid>
+				<description>&lt;h2 id=&#34;how-it-works&#34;&gt;How it works&lt;/h2&gt;&#xA;&lt;p&gt;Open the app and swipe through that day&amp;rsquo;s five Psalms (and a chapter of Proverbs). Let every word or phrase or verse move you to praise, confession, thanksgiving, and supplication before God. Then come back the next day for another set of Psalms and Proverbs.&lt;/p&gt;&#xA;&lt;h2 id=&#34;release-notes&#34;&gt;Release notes&lt;/h2&gt;&#xA;&lt;h3 id=&#34;five-psalms-v3-coming-soon-on-android-and-ios&#34;&gt;Five Psalms v3 coming soon on Android and iOS&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;November 20, 2026&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Version 3 is another complete rewrite of Five Psalms from scratch, but now with separate native apps for Android and for iOS. That means each app is snappier and looks like a native app (because it is!). And two brand new features that you&amp;rsquo;ll love &amp;ndash; you can highlight your favorite portions of the text, and you can schedule a daily reminder to open the app.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

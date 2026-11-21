@@ -1,0 +1,14 @@
+<ul class="app-index">
+  {{ range . }}
+    <li class="app-entry">
+      {{ with .Params.icon }}
+        <img class="app-icon" src="{{ . | relURL }}" width="80" height="80" loading="lazy" alt="">
+      {{ end }}
+      <div class="app-summary">
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <p>{{ .Description }}</p>
+      </div>
+      <a class="button button-outline app-link" href="{{ .RelPermalink }}">View app<span class="sr-only"> · {{ .Title }}</span></a>
+    </li>
+  {{ end }}
+</ul>
